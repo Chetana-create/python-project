@@ -1,0 +1,28 @@
+   
+#encryption
+
+alphabet='abcdefghijklmnopqrstuvwxyz'
+key=4
+newmsg= ''
+message=input('enter the message ')    #chetana,disha
+for character in message: 
+ position = alphabet.find(character)
+ newposition = (position+key)%26
+ newchar = alphabet[newposition]
+ print ('encrypted new charcter is',newchar)
+ newmsg+=newchar
+print('the encrypted final message is', newmsg) #glixere,hmwle
+
+
+#decryption
+alphabet='abcdefghijklmnopqrstuvwxyz'
+key=4
+newmsg= ''
+message=input('enter the message ')#glixere,hmwle
+for character in message: 
+ position = alphabet.find(character)
+ newposition = (position-key)%26
+ newchar = alphabet[newposition]
+ print ('decrypted new charcter is',newchar)
+ newmsg+=newchar
+print('the decrypted final message is', newmsg)#chetana,disha
